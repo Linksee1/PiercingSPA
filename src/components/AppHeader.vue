@@ -9,7 +9,6 @@
       <li>Prices</li>
       <li>Portfolio</li>
       <li>About</li>
-      <li>Location</li>
     </ul>
   </header>
 </template>

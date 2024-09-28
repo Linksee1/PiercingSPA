@@ -6,7 +6,12 @@
 
 <template>
   <AppHeader/>
-  <AppBody/>
+  <AppBody>
+      <Catcher/>
+      <PorfolioCarousel/>
+      <Prices/>
+      <NoGun/>
+  </AppBody>
   <AppFooter/>
 </template>
 
