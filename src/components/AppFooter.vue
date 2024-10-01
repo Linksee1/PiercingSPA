@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer>
+  <footer class="footer">
     <div>
       <span>Location</span>
       <map name="#"></map>
@@ -30,5 +30,7 @@
 </template>
 
 <style scoped>
-
+  .footer {
+    background-color: #27374D;
+  }
 </style>

@@ -1,9 +1,9 @@
 :root {
---primary-background-color: #FF6500;
---secondary-background-color: #FF6500;
+--primary-background-color: #27374D;
+--secondary-background-color: #526D82;
 --text-color: white;
---header-background-color: #FF6500;
---separator-color: #FF6500;
+--header-background-color: #DDE6ED;
+--separator-color: #9DB2BF;
 }
 
 *,
@@ -14,6 +14,12 @@
   font-weight: normal;
 }
 
-body {
+body, #app {
+  min-height: 100vh;
+}
 
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
