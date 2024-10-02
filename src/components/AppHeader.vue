@@ -28,7 +28,7 @@
     &-wrapper {
       display: flex;
       justify-content: center;
-      background-color: #27374D;
+      background-color: var(--primary-background-color);
       position: absolute;
       top: 0;
       width: 100%;

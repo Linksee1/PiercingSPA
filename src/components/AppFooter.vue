@@ -31,6 +31,6 @@
 
 <style scoped>
   .footer {
-    background-color: #27374D;
+    background-color: var(--primary-background-color);
   }
 </style>
