@@ -6,6 +6,11 @@
 --separator-color: #9DB2BF;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto.ttf");
+}
+
 *,
 *::before,
 *::after {
@@ -15,6 +20,7 @@
 }
 
 body, #app {
+  font-family: Roboto, sans-serif;
   min-height: 100vh;
 }
 
@@ -23,3 +29,16 @@ body, #app {
   flex-direction: column;
   justify-content: space-between;
 }
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+p {
+  font-size: 16px;
+}
+
