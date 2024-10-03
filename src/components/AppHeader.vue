@@ -17,35 +17,37 @@
 </template>
 
 <style scoped lang="scss">
-  $headerHeight: 100px;
-  $headerWidth: 1800px;
+$headerHeight: 100px;
 
-  .header {
-    height: $headerHeight;
+.header {
+  height: $headerHeight;
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  &-wrapper {
     display: flex;
+    justify-content: center;
+    background-color: var(--primary-background-color);
+    position: absolute;
+    top: 0;
     width: 100%;
-    position: relative;
-    &-wrapper {
-      display: flex;
-      justify-content: center;
-      background-color: var(--primary-background-color);
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: $headerHeight;
-    }
-    &-list {
-      width: $headerWidth;
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      &-item {
-        color: white;
-        font-size: 20px;
-      }
-
-    }
+    height: $headerHeight;
   }
+
+  &-list {
+    width: var(--nav-width);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-item {
+      color: white;
+      font-size: 20px;
+    }
+
+  }
+}
 </style>
