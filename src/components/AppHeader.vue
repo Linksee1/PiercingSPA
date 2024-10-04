@@ -5,12 +5,26 @@
 <template>
   <header class="header">
     <div class="header-wrapper">
-      <ul class="header-list">
-        <li class="header-list-item">Main</li>
-        <li class="header-list-item">Prices</li>
-        <li class="header-list-item">Portfolio</li>
-        <li class="header-list-item">About</li>
-      </ul>
+      <div class="header-container">
+        <a href="/" class="header-logo">
+          <span>Raccoon</span>
+          <span>piercing</span>
+        </a>
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a href="#">Main</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#">Prices</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#">Portfolio</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </header>
@@ -23,20 +37,39 @@ $headerHeight: 100px;
   height: $headerHeight;
   display: flex;
   width: 100%;
+  background: black;
   position: relative;
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+  }
+
+  &-container {
+    width: var(--nav-width);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
 
   &-wrapper {
     display: flex;
-    justify-content: center;
-    background-color: var(--primary-background-color);
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
     height: $headerHeight;
+    justify-content: center;
   }
 
   &-list {
-    width: var(--nav-width);
     list-style: none;
     padding: 0;
     display: flex;

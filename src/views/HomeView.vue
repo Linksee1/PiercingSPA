@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import AppBody from '../components/AppBody.vue'
   import AppFooter from '../components/AppFooter.vue'
-  import Catcher from '../components/Catcher.vue'
+  import CatcherComponent from '../components/CatcherComponent.vue'
   import AppHeader from '../components/AppHeader.vue'
 </script>
 
@@ -9,7 +9,7 @@
   <AppHeader/>
   <AppBody>
       <h1>test</h1>
-      <Catcher/>
+      <CatcherComponent/>
       <PorfolioCarousel/>
       <Prices/>
       <NoGun/>
