@@ -12,7 +12,7 @@
 
 <style scoped>
 .body {
-  width: 1400px;
+  width: 100%;
 }
 
 .body-background {

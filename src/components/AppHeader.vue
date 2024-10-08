@@ -34,7 +34,6 @@
 $headerHeight: 100px;
 
 .header {
-  height: $headerHeight;
   display: flex;
   width: 100%;
   background: black;

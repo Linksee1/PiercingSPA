@@ -8,7 +8,6 @@
 <template>
   <AppHeader/>
   <AppBody>
-      <h1>test</h1>
       <CatcherComponent/>
       <PorfolioCarousel/>
       <Prices/>
