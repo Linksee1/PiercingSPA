@@ -3,6 +3,7 @@
   import AppFooter from '../components/AppFooter.vue'
   import CatcherComponent from '../components/CatcherComponent.vue'
   import AppHeader from '../components/AppHeader.vue'
+  import Prices from '../components/PriceTable.vue'
 </script>
 
 <template>

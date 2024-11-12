@@ -23,9 +23,8 @@
       <div class="footer-col">
         <span class="footer-col-label">Запись</span>
         any time
-        <a href="#">vk</a>
-        <a href="#">telegram</a>
-        <a href="#">avito</a>
+        <a href="https://vk.com/club219185177">vk</a>
+        <a href="https://t.me/piercingkursk">telegram</a>
         or phone
         <a href="tel:+7-777-777-777">+7-777-777-777</a>
       </div>
