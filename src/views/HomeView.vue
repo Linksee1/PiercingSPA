@@ -1,20 +1,36 @@
 <script setup lang="ts">
-  import AppBody from '../components/AppBody.vue'
-  import AppFooter from '../components/AppFooter.vue'
-  import CatcherComponent from '../components/CatcherComponent.vue'
-  import AppHeader from '../components/AppHeader.vue'
-  import Prices from '../components/PriceTable.vue'
+import CatcherComponent from '../components/CatcherComponent.vue'
+import PriceTable from '@/components/PriceTable.vue'
+import PortfolioShort from '@/components/PortfolioShort.vue'
 </script>
 
 <template>
-  <AppHeader/>
-  <AppBody>
-      <CatcherComponent/>
-      <PorfolioCarousel/>
-      <Prices/>
-      <NoGun/>
-  </AppBody>
-  <AppFooter/>
+  <CatcherComponent />
+  <v-container>
+    <v-row>
+      <v-col>
+        <v-row class="d-flex justify-center">
+          <h1 class="text-center my-10">Цены</h1>
+        </v-row>
+        <v-row>
+          <v-col>
+            <PriceTable></PriceTable>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-row class="d-flex justify-center">
+          <h1 class="text-center my-10">Портфолио</h1>
+        </v-row>
+        <v-row>
+          <PortfolioShort></PortfolioShort>
+        </v-row>
+      </v-col>
+
+    </v-row>
+  </v-container>
 </template>
 
 <style scoped>

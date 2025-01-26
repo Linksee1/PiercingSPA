@@ -1,65 +1,80 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 
+const pricesTable = ref([
+  {
+    name: "Пирсинг",
+    price: "от 1000"
+  },
+  {
+    name: "Прокол ушей",
+    price: "от 2000"
+  },
+  {
+    name: "Хеликс-пирсинг",
+    price: "от 1200"
+  },
+  {
+    name: "Септум-пирсинг",
+    price: "от 1200"
+  },
+  {
+    name: "Индастриал-пирсинг",
+    price: "от 1400"
+  },
+  {
+    name: "Прокол пупка",
+    price: "от 1200"
+  },
+  {
+    name: "Прокол языка",
+    price: "от 1200"
+  },
+  {
+    name: "Прокол брови",
+    price: "от 1200"
+  },
+  {
+    name: "Даунсайз",
+    price: "от 200"
+  },
+  {
+    name: "Замена украшения",
+    price: "от 100"
+  }
+  ,
+  {
+    name: "Пирсинг интимной зоны",
+    price: "от 2000"
+  }
+  ,
+  {
+    name: "Трагус-пирсинг",
+    price: "от 1200"
+  }
+  ,
+  {
+    name: "Украшения",
+    price: "от 200 до 1800"
+  }
+])
 </script>
 
 <template>
-  <div class="price-table-wrapper">
-    <ul class="price-table">
-      <li class="price-table-item">
-        <span>Пирсинг </span>
-        <span>от 1000 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Прокол ушей </span>
-        <span>от 2000 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Хеликс-пирсинг </span>
-        <span>от 1200 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Септум-пирсинг </span>
-        <span>от 1200 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Индастриал-пирсинг </span>
-        <span>от 1400 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Прокол пупка </span>
-        <span>от 1200 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Прокол языка </span>
-        <span>от 1200 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Прокол брови </span>
-        <span>от 1200 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Даунсайз </span>
-        <span>от 200 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Замена украшения </span>
-        <span>от 100 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Пирсинг интимной зоны </span>
-        <span>от 2000 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Трагус-пирсинг </span>
-        <span>от 1200 ₽</span>
-      </li>
-      <li class="price-table-item">
-        <span>Украшения </span>
-        <span>от 200 ₽ до 1800 ₽</span>
-      </li>
-    </ul>
-
-  </div>
+  <v-table>
+    <thead>
+    <tr>
+      <th class="text-left">Наименование услуги</th>
+      <th class="text-right">Цена (₽)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr v-for="item in pricesTable" :key="item.name">
+      <td>{{item.name}}</td>
+      <td class="text-right">{{item.price}}</td>
+    </tr>
+    </tbody>
+  </v-table>
 </template>
 
 <style scoped>
