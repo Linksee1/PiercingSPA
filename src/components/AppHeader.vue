@@ -1,27 +1,27 @@
 <script setup lang="ts">
-
+import {RouterLink} from 'vue-router'
 </script>
 
 <template>
   <header class="header">
     <div class="header-wrapper">
       <div class="header-container">
-        <a href="/" class="header-logo">
+        <RouterLink to="/" class="header-logo">
           <span>Raccoon</span>
           <span>piercing</span>
-        </a>
+        </RouterLink >
         <ul class="header-list">
           <li class="header-list-item">
-            <a href="#">Main</a>
+            <RouterLink to="#">Main</RouterLink>
           </li>
           <li class="header-list-item">
-            <a href="#">Prices</a>
+            <RouterLink to="#">Prices</RouterLink>
           </li>
           <li class="header-list-item">
-            <a href="#">Portfolio</a>
+            <RouterLink to="#">Portfolio</RouterLink>
           </li>
           <li class="header-list-item">
-            <a href="#">About</a>
+            <RouterLink to="#">About</RouterLink>
           </li>
         </ul>
       </div>
