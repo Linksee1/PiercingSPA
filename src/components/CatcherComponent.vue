@@ -6,22 +6,50 @@
   <div class="catcher-wrapper">
     <div class="catcher-glass">
       <div class="catcher-glass-wrapper">
-        <div class="catcher-glass-block">
-          <div class="catcher-glass-block-title">
-            <h1>Пирсинг</h1>
-            <h2>в Курске</h2>
-          </div>
-          <div class="catcher-glass-block-description">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.           </div>
-        </div>
-        <div class="catcher-glass-block">
-          <ul class="catcher-glass-block-table">
-            <li>Pos ______ 1000руб</li>
-            <li>Pos ______ 1000руб</li>
-            <li>Pos ______ 1000руб</li>
-            <li>Pos ______ 1000руб</li>
-          </ul>
-        </div>
+        <v-container>
+          <v-row>
+            <v-col class="d-flex align-center">
+              <h1 class="text-h1">
+                <span>
+                  Пирсинг
+                </span>
+                <span>
+                   в Курске
+                </span>
+              </h1>
+            </v-col>
+            <v-col class="text-body-1">
+              <p>
+                Делаем пирсинг любой сложности с использованием одноразовых игл и стерильных инструментов.
+              </p>
+              <v-divider class="my-2"></v-divider>
+              <p>
+                Большой выбор
+                качественных украшений в любой прокол.
+              </p>
+              <v-divider class="my-2"></v-divider>
+              <p>
+                Сопровождение до полного заживления, бесплатный даунсайз проколов, сделанных у нас.
+              </p>
+              <v-divider class="my-2"></v-divider>
+              <p>
+                Опыт работы больше 6 лет, медицинское образование.
+              </p>
+              <v-divider class="my-2"></v-divider>
+              <p>
+                Чай, кофе и вкусняшки в студии.
+              </p>
+              <v-divider class="my-2"></v-divider>
+              <p>
+                Адрес: г. Курск ул.Гоголя 47
+              </p>
+              <v-divider class="my-2"></v-divider>
+              <p>
+                Телефон для связи: 89103190255
+              </p>
+            </v-col>
+          </v-row>
+        </v-container>
       </div>
     </div>
   </div>
@@ -46,22 +74,26 @@
     width: 50%;
     margin: 150px 0;
     display: flex;
-    &-block{
+
+    &-block {
       &-title {
         & h1 {
           font-size: 64px;
           line-height: 64px;
         }
+
         & h2 {
           font-size: 50px;
           line-height: 50px;
         }
       }
+
       &-description {
         margin-top: 30px;
         width: 400px;
       }
     }
+
     &-wrapper {
       display: flex;
       margin: 50px;

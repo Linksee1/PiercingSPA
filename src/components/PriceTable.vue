@@ -61,20 +61,25 @@ const pricesTable = ref([
 </script>
 
 <template>
-  <v-table>
-    <thead>
-    <tr>
-      <th class="text-left">Наименование услуги</th>
-      <th class="text-right">Цена (₽)</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr v-for="item in pricesTable" :key="item.name">
-      <td>{{item.name}}</td>
-      <td class="text-right">{{item.price}}</td>
-    </tr>
-    </tbody>
-  </v-table>
+  <v-row justify="center">
+    <v-col cols="6" >
+      <v-table>
+        <thead>
+        <tr>
+          <th class="text-left">Наименование услуги</th>
+          <th class="text-right">Цена (₽)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="item in pricesTable" :key="item.name">
+          <td>{{item.name}}</td>
+          <td class="text-right">{{item.price}}</td>
+        </tr>
+        </tbody>
+      </v-table>
+    </v-col>
+  </v-row>
+
 </template>
 
 <style scoped>
